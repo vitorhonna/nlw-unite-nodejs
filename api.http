@@ -2,7 +2,25 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-  "title": "NLW Unite Node.js",
-  "details": "Evento de tecnologia",
-  "maximumAttendees": 100
+  "title": "Dummy Event 2",
+  "details": "",
+  "maximumAttendees": 1
 }
+
+###
+
+POST http://localhost:3333/events/ae4215cd-372d-4353-87dd-bd76a3f197f0/attendees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "email": "john.doe.1@email.com"
+}
+
+###
+
+GET http://localhost:3333/events/38e7e95d-0415-481a-b646-538ae54eb98f
+
+###
+
+GET http://localhost:3333/attendees/2/badge
